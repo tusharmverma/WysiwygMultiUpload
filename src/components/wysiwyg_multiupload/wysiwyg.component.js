@@ -3,10 +3,6 @@ import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 const Wysiwyg = () => {
-	const [editorState, setEditorState] = React.useState()
-	const onEditorStateChange = (editorState) => {
-      setEditorState(editorState)
-    };
 
     const editorStyle = {
 	    border: '1px solid lightgray',
@@ -18,7 +14,6 @@ const Wysiwyg = () => {
 
     return (
     	<Editor
-  		    onEditorStateChange={onEditorStateChange}
   		    editorStyle={editorStyle}
   		    placeholder="Patient Review"
   		/>
