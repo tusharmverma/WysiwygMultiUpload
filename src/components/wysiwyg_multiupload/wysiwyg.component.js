@@ -1,7 +1,7 @@
 import React from 'react';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-
+import './wysiwyg.css'
 const Wysiwyg = () => {
 
     const editorStyle = {
@@ -15,8 +15,23 @@ const Wysiwyg = () => {
     return (
     	<Editor
   		    editorStyle={editorStyle}
+          toolbar={{
+            inline: { options : ['bold', 'italic', 'underline'] },
+            list: { options  : [] },
+            textAlign: { options  : [] },
+            link: { options  : [] },
+            history: { options  : [] },
+            blockType: { options  : [], className: "hidden" },
+            fontSize: { options  : [], className: "hidden" },
+            fontFamily: { options  : [], className: "hidden" },
+            colorPicker: { colors  : [], className: "hidden" },
+            emoji: { emojis  : [], className: "hidden" },
+            embedded: { className: "hidden" },
+            image: { className: "hidden" },
+            remove: { className: "hidden" },
+          }}
   		    placeholder="Patient Review"
-  		/>
+  		/> 
     	)
 }
 

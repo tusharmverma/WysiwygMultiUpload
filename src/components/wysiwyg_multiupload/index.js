@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Wysiwyg from './wysiwyg.component';
-import Multiupload from './multiupload.component';
+import MultiUploadTextArea from './multiupload_textarea.components'
 
 const WysiwygMultiupload = () => {
 
 	return (
 		<WysiwygMultiuploadContainer>
-		<Multiupload />
+		<MultiUploadTextArea />
 		<Wysiwyg />
 		</WysiwygMultiuploadContainer>
 		)
